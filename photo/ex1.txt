@@ -1,0 +1,90 @@
+Ibrahim alyan
+322675356
+http://ibrahimel.mysoft.jce.ac.il/ex1/
+
+In the beginning I have these files
+File ex1 
+Request URL:
+http://ibrahimel.mysoft.jce.ac.il/ex1/
+Request Method:
+GET
+Status Code:
+200 OK
+Remote Address:
+62.90.88.37:80
+Referrer Policy:
+strict-origin-when-cross-origin
+
+File styles.css
+Request URL:
+http://ibrahimel.mysoft.jce.ac.il/ex1/styles.css
+Request Method:
+GET
+Status Code:
+200 OK
+Remote Address:
+62.90.88.37:80
+Referrer Policy:
+strict-origin-when-cross-origin
+
+File jqeury.min.js 
+Request URL:
+https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+Request Method:
+GET
+Status Code:
+200 OK
+Remote Address:
+172.217.22.106:443
+Referrer Policy:
+strict-origin-when-cross-origin
+
+File script.js
+Request URL:
+http://ibrahimel.mysoft.jce.ac.il/ex1/script.js
+Request Method:
+GET
+Status Code:
+200 OK
+Remote Address:
+62.90.88.37:80
+Referrer Policy:
+strict-origin-when-cross-origin
+
+
+And when I filter a photo
+Request URL:
+https://images.unsplash.com/photo-1526423007471-5d86aebf3d5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MTY0MTR8MHwxfHNlYXJjaHw2fHxsb2d8ZW58MHx8fHwxNzE3MDgxNTA2fDA&ixlib=rb-4.0.3&q=80&w=200
+Request Method:
+GET
+Status Code:
+200 OK
+Remote Address:
+151.101.2.208:443
+Referrer Policy:
+strict-origin-when-cross-origin
+
+
+And if was a cache 
+Request URL:
+https://api.unsplash.com/search/photos?query=sky&client_id=18OerCUXhFCbPipqd27WL84AXgm3AQJojY2zoFM0TSM&per_page=20&page=1
+Request Method:
+GET
+Status Code:
+200 OK (from disk cache)
+Remote Address:
+151.101.1.181:443
+Referrer Policy:
+strict-origin-when-cross-origin
+
+And finally when the request ends
+Request URL:
+https://api.unsplash.com/search/photos?query=gek&client_id=18OerCUXhFCbPipqd27WL84AXgm3AQJojY2zoFM0TSM&per_page=20&page=1
+Request Method:
+GET
+Status Code:
+403 Forbidden
+Remote Address:
+151.101.1.181:443
+Referrer Policy:
+strict-origin-when-cross-origin
