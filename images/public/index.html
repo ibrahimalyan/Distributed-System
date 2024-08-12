@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Management</h1>
+        <button id="addProjectBtn">Add Project</button>
+        <div id="addProjectForm" class="form-container">
+            <h2>Add Project</h2>
+            <form id="projectForm">
+                <label for="projectName">Project Name:</label>
+                <input type="text" id="projectName" name="projectName" required>
+                
+                <label for="projectDescription">Description:</label>
+                <textarea id="projectDescription" name="projectDescription" required></textarea>
+                
+                <label for="managerName">Manager Name:</label>
+                <input type="text" id="managerName" name="managerName" required>
+                
+                <label for="managerEmail">Manager Email:</label>
+                <input type="email" id="managerEmail" name="managerEmail" required>
+                
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                
+                <div id="teamMembers">
+                    <h3>Team Members</h3>
+                    <div class="team-member">
+                        <label for="teamMemberName0">Name:</label>
+                        <input type="text" id="teamMemberName0" class="teamMemberName" name="teamMemberName0" required>
+                        
+                        <label for="teamMemberEmail0">Email:</label>
+                        <input type="email" id="teamMemberEmail0" class="teamMemberEmail" name="teamMemberEmail0" required>
+                        
+                        <label for="teamMemberRole0">Role:</label>
+                        <input type="text" id="teamMemberRole0" class="teamMemberRole" name="teamMemberRole0" required>
+                    </div>
+                </div>
+                <button type="button" id="addTeamMemberBtn">Add Team Member</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="projectList">
+            <h2>Project List</h2>
+            <div class="sorting-buttons">
+                <button id="sortByName">Sort by Project Name</button>
+                <button id="sortByManager">Sort by Manager Name</button>
+                <button id="sortByStartDate">Sort by Start Date</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Project Name</th>
+                        <th>Manager Name</th>
+                        <th>Start Date</th>
+                        <th>Summary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Project list will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="addImageForm" class="form-container">
+        <h2>Add Image</h2>
+        <form id="imageForm">
+            <label for="imageQuery">Search Images:</label>
+            <input type="text" id="imageQuery" name="imageQuery" required>
+            <button type="button" id="searchImageBtn">Search</button>
+            <div id="imageResults"></div>
+            <button type="submit">Add Image</button>
+        </form>
+    </div>
+    
+    <div id="viewImagesContainer" class="form-container" style="display:none;">
+        <h2>Project Images</h2>
+        <div id="imageList"></div>
+    </div>
+    <!-- Modal for image preview -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
